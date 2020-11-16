@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="RB2-rG-o93">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Задания-->
+        <scene sceneID="0Ca-HR-x7t">
+            <objects>
+                <viewController id="vjq-1U-WzS" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8C7-SI-s8n">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="aj1-sU-tT1">
+                                <rect key="frame" x="169" y="130" width="76" height="130"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c3P-2e-FUn">
+                                        <rect key="frame" x="0.0" y="0.0" width="76" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                        <state key="normal" title="Задание 1"/>
+                                        <connections>
+                                            <segue destination="BYZ-38-t0r" kind="show" id="rqb-Zf-lZY"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QKw-Ln-ySB">
+                                        <rect key="frame" x="0.0" y="50" width="76" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                        <state key="normal" title="Задание 2"/>
+                                        <connections>
+                                            <segue destination="DLr-Tf-GRN" kind="show" id="NDG-jb-nTw"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2M4-9L-lPu">
+                                        <rect key="frame" x="0.0" y="100" width="76" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                        <state key="normal" title="Задание 3"/>
+                                        <connections>
+                                            <segue destination="MqN-hr-phv" kind="show" id="c1h-C2-hf3"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="sd5-Oj-I3f"/>
+                        <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="aj1-sU-tT1" firstAttribute="centerX" secondItem="sd5-Oj-I3f" secondAttribute="centerX" id="Ajc-j1-Qrc"/>
+                            <constraint firstItem="aj1-sU-tT1" firstAttribute="top" secondItem="sd5-Oj-I3f" secondAttribute="top" constant="42" id="y5z-52-ShI"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Задания" id="VUi-sc-UVD"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Hw2-8q-MMF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-681" y="104"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="QxL-Gy-BBb">
+            <objects>
+                <navigationController id="RB2-rG-o93" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="Fvn-XF-V8j">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="vjq-1U-WzS" kind="relationship" relationship="rootViewController" id="z1e-ER-wFz"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="N9F-zn-aDn" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1852" y="104"/>
+        </scene>
+        <!--Задание 1-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController modalPresentationStyle="formSheet" id="BYZ-38-t0r" customClass="ViewController" customModule="lesson2" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LgQ-aN-OX1">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YU0-dY-aYz">
+                                <rect key="frame" x="180" y="709" width="54" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Готово"/>
+                                <connections>
+                                    <action selector="goBack" destination="dkx-z0-nzr" eventType="touchDown" id="NSI-Vt-Cka"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="11" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qTO-zE-zrr">
+                                <rect key="frame" x="48" y="88" width="332" height="275"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="332" id="0KB-AZ-sWy"/>
+                                    <constraint firstAttribute="height" constant="275" id="7oF-O7-gBA"/>
+                                </constraints>
+                                <string key="text">В сториборде добавить на View Controller, который является входной точкой, любой текст размера от 20 и любого цвета, кроме черного, на середину верхней половины экрана (чтобы на устройствах разного размера он был на одном и том же месте) и кнопку на середину нижней половины экрана.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" systemColor="systemGray2Color"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Bqj-ib-3G8"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qTO-zE-zrr" firstAttribute="centerX" secondItem="YU0-dY-aYz" secondAttribute="centerX" constant="7" id="0GN-7H-Rtw"/>
+                            <constraint firstItem="qTO-zE-zrr" firstAttribute="centerX" secondItem="LgQ-aN-OX1" secondAttribute="centerX" constant="7" id="Ytc-dV-1Sm"/>
+                            <constraint firstItem="Bqj-ib-3G8" firstAttribute="bottom" secondItem="YU0-dY-aYz" secondAttribute="bottom" constant="120" id="rUA-dh-aEo"/>
+                            <constraint firstItem="qTO-zE-zrr" firstAttribute="top" secondItem="Bqj-ib-3G8" secondAttribute="top" id="uHF-ql-plV"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Задание 1" leftItemsSupplementBackButton="YES" id="WvW-5V-ah9"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="153.62318840579712" y="-574.55357142857144"/>
+        </scene>
+        <!--Задание 2-->
+        <scene sceneID="29r-OB-Qjb">
+            <objects>
+                <viewController id="DLr-Tf-GRN" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4EO-E6-Mqn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="u8B-Ud-BnU">
+                                <rect key="frame" x="234" y="662.5" width="51" height="31"/>
+                            </switch>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ладно" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hj8-qa-Ed3">
+                                <rect key="frame" x="152.5" y="662.5" width="61.5" height="25.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jac" translatesAutoresizingMaskIntoConstraints="NO" id="m2U-9p-nM3">
+                                <rect key="frame" x="16" y="193.5" width="382" height="429"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="382" id="6U2-TN-0Qt"/>
+                                    <constraint firstAttribute="height" constant="429" id="SXE-Pj-3Tw"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="0NY-dK-XQl"/>
+                        <color key="backgroundColor" red="0.12984204290000001" green="0.12984612579999999" blue="0.12984395030000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Hj8-qa-Ed3" firstAttribute="top" secondItem="m2U-9p-nM3" secondAttribute="bottom" constant="40" id="4pk-kg-aS7"/>
+                            <constraint firstItem="0NY-dK-XQl" firstAttribute="trailing" secondItem="Hj8-qa-Ed3" secondAttribute="trailing" priority="250" constant="200" id="PS4-Z4-txV"/>
+                            <constraint firstItem="m2U-9p-nM3" firstAttribute="centerX" secondItem="0NY-dK-XQl" secondAttribute="centerX" id="Uf6-K5-a8T"/>
+                            <constraint firstItem="m2U-9p-nM3" firstAttribute="centerY" secondItem="4EO-E6-Mqn" secondAttribute="centerY" constant="-40" id="VSa-bd-jGs"/>
+                            <constraint firstItem="u8B-Ud-BnU" firstAttribute="leading" secondItem="Hj8-qa-Ed3" secondAttribute="trailing" priority="750" constant="20" id="WRs-t3-hoI"/>
+                            <constraint firstItem="u8B-Ud-BnU" firstAttribute="top" secondItem="Hj8-qa-Ed3" secondAttribute="top" id="r0N-ci-fGb"/>
+                            <constraint firstItem="m2U-9p-nM3" firstAttribute="centerX" secondItem="4EO-E6-Mqn" secondAttribute="centerX" id="xiB-kw-KNt"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Задание 2" id="7Ch-2B-T9s"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OWj-YZ-ePR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="154" y="104"/>
+        </scene>
+        <!--Задание 3-->
+        <scene sceneID="6tX-2x-XPy">
+            <objects>
+                <viewController id="MqN-hr-phv" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="DFh-RL-3da">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="13" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C5k-BJ-e1n">
+                                <rect key="frame" x="36" y="88" width="342" height="222"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="222" id="01p-HA-6PI"/>
+                                    <constraint firstAttribute="width" constant="342" id="k2h-Er-yO8"/>
+                                </constraints>
+                                <string key="text">Сделать несколько View Controller'ов, добавить переход с одного из них на все остальные, которые будут отличаться цветом (можно использовать Экраны из 1 и 2 задания). Например 3 кнопки на экране, каждая ведет к своему экрану. Должна быть возможность вернуться к исходному экрану. В ответ прикрепить ссылку на репозиторий гитхаба.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="8Jn-Vv-ZTv"/>
+                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="C5k-BJ-e1n" firstAttribute="top" secondItem="8Jn-Vv-ZTv" secondAttribute="top" id="AFg-de-5bp"/>
+                            <constraint firstItem="C5k-BJ-e1n" firstAttribute="centerX" secondItem="8Jn-Vv-ZTv" secondAttribute="centerX" id="aa3-9S-Mad"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Задание 3" id="rVE-3h-1wL"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Mfa-zG-HL7" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="154" y="831"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="jac" width="600" height="900"/>
+        <systemColor name="systemGray2Color">
+            <color red="0.68235294117647061" green="0.68235294117647061" blue="0.69803921568627447" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
