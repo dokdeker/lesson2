@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ImageCell" id="0pk-Uv-HoV" customClass="ImageCell" customModule="photo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="75" height="89"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="KhK-9d-ZzF" customClass="UICollectionViewCell">
+                <rect key="frame" x="0.0" y="0.0" width="75" height="89"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="fi7-27-8U2">
+                        <rect key="frame" x="0.0" y="0.0" width="75" height="89"/>
+                    </imageView>
+                </subviews>
+                <color key="backgroundColor" systemColor="systemGray4Color"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="fi7-27-8U2" secondAttribute="trailing" id="BnL-lW-IJf"/>
+                    <constraint firstItem="fi7-27-8U2" firstAttribute="leading" secondItem="KhK-9d-ZzF" secondAttribute="leading" id="G5o-FW-dXF"/>
+                    <constraint firstItem="fi7-27-8U2" firstAttribute="top" secondItem="KhK-9d-ZzF" secondAttribute="top" id="N9Y-Et-1dM"/>
+                    <constraint firstAttribute="bottom" secondItem="fi7-27-8U2" secondAttribute="bottom" id="ebx-SM-Wyo"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="75" height="89"/>
+            <connections>
+                <outlet property="imageView" destination="fi7-27-8U2" id="DCu-p8-BqM"/>
+            </connections>
+            <point key="canvasLocation" x="425.36231884057975" y="111.49553571428571"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <systemColor name="systemGray4Color">
+            <color red="0.81960784313725488" green="0.81960784313725488" blue="0.83921568627450982" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
